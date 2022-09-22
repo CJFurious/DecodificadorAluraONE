@@ -1,0 +1,201 @@
+:root {
+  --darkingblue: #0c6fe3;
+  --lightblue: #b8d6f9;
+  --background: #94bbe9;
+  --messagebackground: #ffffff;
+  --fontInter: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--fontInter);
+}
+
+/* LOGO INICIAL */
+header img {
+  margin: 10px 0 0 15px;
+  width: 12%;
+  cursor: pointer;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+main {
+  display: flex;
+  margin: 0.5em 0 0 12%;
+}
+
+textarea {
+  background-color: var(--messagebackground);
+
+  width: 96%;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 20px 0 0 20px;
+}
+
+/* ENTRADA DA MENSAGEM */
+
+#entrada-codigo {
+  width: 50%;
+  margin-right: 5%;
+  height: 500px;
+
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 4px 8px 10px 0px rgb(0 0 0 / 36%);
+}
+
+#entrada-mensagem {
+  height: 74%;
+  font-size: 32px;
+  color: var(--darkingblue);
+}
+
+#entrada-codigo textarea::placeholder {
+  font-size: 20px;
+  font-family: var(--fontInter);
+  color: var(--darkingblue);
+}
+
+#botoes-codigo {
+  margin: 2em auto;
+}
+
+#botoes-codigo #aviso {
+  display: flex;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+#botoes-codigo #aviso p {
+  font-size: 15px;
+  color: #495057;
+  padding-left: 6px;
+  margin: -16px 0px 0px 2px;
+}
+
+#botoes-codigo #aviso img {
+  margin: -20px 0px 2px 9px;
+  width: 4%;
+}
+
+button {
+  text-align: center;
+  width: 45%;
+
+  padding: 15px 0;
+  font-size: 15px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: var(--darkingblue);
+  color: #ffffff;
+}
+
+button:last-child {
+  margin-left: 10px;
+  background-color: var(--lightblue);
+  color: var(--darkingblue);
+}
+
+button:hover:first-child {
+  background-color: #2882ed;
+}
+
+button:hover:last-child {
+  background-color: #a1c7e9;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* RESULTADO DA MENSAGEM */
+
+#saida-codigo {
+  width: 35%;
+  height: 500px;
+
+  text-align: center;
+}
+
+#sem-codigo {
+  background-image: url(./imagens/boneco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-position-y: 5%;
+}
+
+#sem-codigo,
+#com-codigo {
+  background-color: var(--messagebackground);
+  border-radius: 10px;
+  height: 500px;
+  box-shadow: 12px 16px 17px 2px rgb(0 0 0 / 36%);
+}
+
+.saida-item {
+  padding-bottom: 15px;
+  position: relative;
+  top: 350px;
+}
+
+#sem-codigo h3 {
+  font-size: 22px;
+  color: #343a40;
+  width: 80%;
+
+  margin: 0 auto;
+
+  font-weight: 700;
+}
+
+#sem-codigo p {
+  font-size: 16px;
+  color: #495057;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#saida-mensagem {
+  font-size: 32px;
+  color: #0c6fe3;
+}
+
+#com-codigo textarea {
+  height: 376px;
+}
+
+#com-codigo button {
+  margin: 10% 0 3% 0;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer li {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+footer li img {
+  width: 20px;
+}

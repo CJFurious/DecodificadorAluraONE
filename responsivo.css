@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 25%;
+    margin-bottom: 1em;
+  }
+
+  #saida-codigo {
+    margin-top: 2.5em;
+  }
+
+  #entrada-codigo,
+  #saida-codigo {
+    width: auto;
+    margin-right: 2em;
+    height: 420px;
+  }
+
+  #entrada-codigo textarea {
+    height: 50%;
+  }
+
+  #aviso {
+    justify-content: center;
+  }
+
+  #botoes-codigo #aviso p {
+    font-size: 12px;
+  }
+
+  #botoes-codigo #aviso img {
+    width: 3%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 80%;
+    align-items: center;
+  }
+
+  .buttons button {
+    margin: 0.2em auto;
+  }
+
+  #sem-codigo {
+    background: none;
+    height: 250px;
+    margin-top: 2em;
+  }
+
+  .saida-item {
+    position: inherit;
+  }
+
+  #com-codigo {
+    margin-top: 5em;
+    height: 250px;
+  }
+
+  #com-codigo textarea {
+    height: 225px;
+  }
+
+  #com-codigo button {
+    margin: 7% 0 3% 0;
+    width: 35%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 671px) and (max-width: 923px) {
+  .saida-item {
+    padding-bottom: 15px;
+    position: relative;
+    top: 300px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.::. Codificador Alura .::.</title>
+  <link rel="icon" href="/imagens/logo.png" type="image/png">
+  <!-- css -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsivo.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <img id="logo" src="/imagens/logo.png" alt="Logo da alura" onclick="btnReset()">
+    </div>
+  </header>
+
+  <main>
+    <section id="entrada-codigo">
+      <textarea name="" id="entrada-mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+      <div id="botoes-codigo">
+        <div id="aviso">
+          <img src="/imagens/!_exclamacao.svg" alt="imagem com exclamação indicando um aviso">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="buttons">
+          <button onclick="btnEncriptar()">Criptografar</button>
+          <button onclick="btnDesencriptar()">Descriptografar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="saida-codigo">
+      <div id="sem-codigo">
+        <h3 class="saida-item">Nenhuma mensagem encontrada</h3>
+        <p class="saida-item">Digite o texto que você deseja criptografar ou descriptografar</p>
+      </div>
+      <div id="com-codigo" style="display: none;">
+        <textarea name="" id="saida-mensagem"></textarea>
+        <button onclick="btnCopiar()">Copiar texto</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Carlos Junior.</p>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/carlos-junior-progamador/" target="_blank"> <img
+            src="/imagens/linkedin.png" alt="Logo do linkedin">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/CJFurious" target="_blank">
+          <img src="/imagens/github.png" alt="Logo do GitHub">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
